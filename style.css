@@ -5,6 +5,28 @@ body {
     width: 500px;
     margin: 20px auto;
   }
+  .dark-mode-toggle {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    padding: 10px;
+    cursor: pointer;
+  }
+  .dark-theme {
+    background-color: #222;
+    color: white;
+  }
+  
+  .dark-theme .form,
+  .dark-theme .tasks {
+    background-color: #333;
+  }
+  
+  .dark-theme .task {
+    background-color: #444;
+    color: white;
+  }
+  
   .form {
     background-color: #eeeeeeb4;
     border-radius: 6px;

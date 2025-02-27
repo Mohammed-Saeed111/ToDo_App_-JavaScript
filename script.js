@@ -3,6 +3,12 @@ const submit = document.querySelector(".add");
 const deleteAll = document.querySelector(".delete-all");
 const tasksDiv = document.querySelector(".tasks");
 
+function toggleDarkMode() {
+  document.body.classList.toggle("dark-theme");
+  const isDarkMode = document.body.classList.contains("dark-theme");
+  localStorage.setItem("darkMode", isDarkMode ? "true" : "false");
+}
+
 let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
 renderTasks();
 
